@@ -1,5 +1,10 @@
 const mongoose = require("mongoose");
 
+mongoose.connect("mongodb+srv://mohdshahida891:ALQF97Al4QeED7PW@cluster0.kzl8h2j.mongodb.net/paytm", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
